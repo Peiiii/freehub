@@ -57,7 +57,10 @@ setuptools.setup(
     url="http://github.com/Peiiii/freehub",
     packages=packages,
     package_dir={'freehub': 'freehub'},
-    install_requires=[],
+    install_requires=[
+        'dulwich',
+        'fire'
+    ],
     entry_points={
         'console_scripts': [
             'freehub = freehub.clitools.cli:main',
